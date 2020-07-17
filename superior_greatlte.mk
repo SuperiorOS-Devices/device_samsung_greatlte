@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
+#OFFICIAL
+TARGET_SUPERIOR_OFFICIAL=true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1440

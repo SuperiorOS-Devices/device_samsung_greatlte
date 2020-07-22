@@ -29,6 +29,8 @@ $(call inherit-product, vendor/superior/config/common.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.superior.maintainer=HaSSaN
 
+TARGET_ALLOW_MISSING_DEPENDENCIES=true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1440
 

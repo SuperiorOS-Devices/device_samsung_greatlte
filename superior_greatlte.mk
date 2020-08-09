@@ -25,11 +25,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
+export SUPERIOR_OFFICIAL = true 
+
 #Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.superior.maintainer=HaSSaN
 
-TARGET_ALLOW_MISSING_DEPENDENCIES=true
+export ALLOW_MISSING_DEPENDENCIES = true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1440
@@ -49,3 +51,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="greatltexx-user 8.0.0 R16NW N950FXXU3CRC1 release-keys"
 
 BUILD_FINGERPRINT := samsung/greatltexx/dreamlte:8.0.0/R16NW/N950FXXU3CRC1:user/release-keys
+
+# Launcher
+TARGET_LAUNCHER := oplauncher
